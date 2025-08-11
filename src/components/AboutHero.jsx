@@ -1,17 +1,14 @@
 import React from "react";
 import { motion } from "framer-motion";
-
+import aboutBg from "../assets/about-bg.jpg";
 const AboutHero = () => {
   return (
-    <section className="relative w-full h-screen flex items-center justify-center overflow-hidden -mt-24 md:-mt-28 pt-24 md:pt-28">
-      {/* Background image - now extends to top */}
-      <img
-        src="/public/business-man-planning.jpg"
-        alt="Contact Hero Background"
-        className="absolute inset-0 w-full h-full object-cover object-center z-0"
-        draggable="false"
-      />
-
+    <section
+      className="relative w-full h-screen flex items-center justify-center overflow-hidden -mt-24 md:-mt-28 pt-24 md:pt-28 bg-cover bg-center bg-fixed"
+      style={{
+        backgroundImage: `url(${aboutBg})`,
+      }}
+    >
       {/* Overlay */}
       <div className="absolute inset-0 bg-black/40 z-10" />
 
@@ -22,7 +19,7 @@ const AboutHero = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, ease: "easeOut" }}
       >
-        <h1 className="text-white text-[3rem] md:text-[10rem] font-light leading-none text-center drop-shadow-lg">
+        <h1 className="text-white text-[1rem] md:text-[6rem] font-light leading-none text-center drop-shadow-lg">
           Dig Deeper.
         </h1>
       </motion.div>

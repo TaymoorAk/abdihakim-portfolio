@@ -48,94 +48,81 @@ const BackStory = () => {
       >
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 lg:gap-16 items-start">
           {/* Left side - Title (1/3 width) */}
-          <motion.div className="lg:col-span-1" variants={titleVariants}>
-            <h1 className="text-white text-4xl md:text-4xl lg:text-5xl font-light leading-tight">
-              Back Story.
-            </h1>
-          </motion.div>
-
-          {/* Right side - Content (2/3 width) */}
           <motion.div
-            className="lg:col-span-2 space-y-8"
+            className="lg:col-span-2 space-y-8 text-right"
             variants={containerVariants}
           >
             <motion.p
               className="text-white text-base md:text-lg leading-relaxed font-light"
               variants={paragraphVariants}
             >
-              Yes, as I stated in my random facts and in the video above, I knew
-              what I wanted to do by the age of 13. The short version is that I
-              loved playing video games growing up and always had an interest in
-              knowing how they were made. So, a small idea turned into me
-              wanting to make my own video game.
+              My journey into project management began earlier than most would
+              expect. While still in school, I found myself naturally stepping
+              into leadership roles — organizing group projects, setting
+              timelines, and ensuring everyone stayed on track. What started as
+              a way to help my classmates succeed quickly grew into a passion
+              for guiding complex initiatives from start to finish.
             </motion.p>
 
             <motion.p
               className="text-white text-base md:text-lg leading-relaxed font-light"
               variants={paragraphVariants}
             >
-              And after a few friends helped to fill up notebooks with thoughts,
-              ideas, and drawings we quickly realized that we needed a website.
-              Obviously, this was before the internet was filled with this type
-              of knowledge readily available at your fingertips (Youtube,
-              Facebook, and even MySpace weren't a thing yet). So, I was able to
-              teach myself the basics and build something.
+              Over time, I discovered that I thrived in the space where ideas
+              meet execution. I learned how to translate broad visions into
+              structured plans, create clear communication channels between
+              stakeholders, and manage resources efficiently. Even before
+              project management tools became the norm, I was creating my own
+              systems to keep teams aligned.
             </motion.p>
 
             <motion.p
               className="text-white text-base md:text-lg leading-relaxed font-light"
               variants={paragraphVariants}
             >
-              Fast-forwarding, after graduating college with an associate's
-              degree in digital arts, I made my way into multiple jobs. First
-              starting out as a designer in the print industry for a small
-              publication company. This was the start of many core
-              understandings and played a key role in my thought process when
-              thinking about design as a whole, especially when it comes to
-              typography. After that, working my way into the development
-              industry was a path that I created for myself based on one
-              question that I still find myself asking, how does it work? This
-              was the one question that started the passion I call my career.
+              My professional career began in a fast-paced environment where
+              meeting deadlines and delivering results were non-negotiable.
+              These early experiences sharpened my ability to assess risks,
+              prioritize effectively, and maintain focus under pressure — skills
+              that remain at the core of my approach today.
             </motion.p>
 
             <motion.p
               className="text-white text-base md:text-lg leading-relaxed font-light"
               variants={paragraphVariants}
             >
-              After years in the industry, and having gone through multiple
-              opportunities, some good, and some bad,{" "}
+              After several years of leading projects across different
+              industries,{" "}
               <span className="underline decoration-orange-400 underline-offset-4 cursor-pointer hover:text-orange-400 transition-colors duration-300">
-                I finally left my full-time job to venture on my own
+                I decided to step out on my own
               </span>
-              . It was March of 2016 which was my first day working for myself
-              as a{" "}
-              <span className="underline decoration-orange-400 underline-offset-4 cursor-pointer hover:text-orange-400 transition-colors duration-300">
-                Squarespace developer
-              </span>
-              . So, here I am years later still doing the same damn thing, and
-              still loving it.
+              . This allowed me to work directly with organizations of all sizes
+              — from startups needing structure to established companies looking
+              to optimize processes — and deliver tailored solutions for each.
             </motion.p>
 
             <motion.p
               className="text-white text-base md:text-lg leading-relaxed font-light"
               variants={paragraphVariants}
             >
-              Now, as of 2022, I've been finding myself venturing down new paths
-              and pushing some new focus areas such as helping people{" "}
+              Today, my work goes beyond simply managing tasks. I focus on
+              creating sustainable frameworks, empowering teams, and fostering
+              collaboration that leads to measurable impact.{" "}
               <span className="underline decoration-orange-400 underline-offset-4 cursor-pointer hover:text-orange-400 transition-colors duration-300">
-                build personal brands
-              </span>
-              . Ever since I created my own personal brand back in 2016, I
-              realized that I've learned a lot and can help teach people what
-              I've learned over the years about what worked and what didn't for
-              me. And if you want to know more about why I started a personal
-              brand, you can{" "}
-              <span className="underline decoration-orange-400 underline-offset-4 cursor-pointer hover:text-orange-400 transition-colors duration-300">
-                read the full story
-              </span>
-              .
+                Building successful projects
+              </span>{" "}
+              is more than just hitting deadlines — it’s about bringing people
+              together to create something greater than the sum of its parts.
             </motion.p>
           </motion.div>
+
+          <motion.div className="lg:col-span-1" variants={titleVariants}>
+            <h1 className="text-white text-4xl md:text-4xl lg:text-5xl font-light leading-tight text-left">
+              Back Story.
+            </h1>
+          </motion.div>
+
+          {/* Right side - Content (2/3 width) */}
         </div>
       </motion.div>
     </div>

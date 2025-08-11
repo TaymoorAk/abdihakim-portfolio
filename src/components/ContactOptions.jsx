@@ -8,24 +8,24 @@ const ContactOptions = () => {
 
   const services = [
     {
-      title: "Code Shop Support",
+      title: "Project Consultation",
       description:
-        "Built by an expert, I provide high-quality plugins, snippets, and support that will help take your site further.",
-      link: "SUBMIT TICKET",
+        "Book a session to discuss your upcoming project, outline goals, and explore strategies to achieve them efficiently.",
+      link: "BOOK CONSULTATION",
       delay: 0.1,
     },
     {
-      title: "Hire an Expert",
+      title: "Full Project Management",
       description:
-        "Looking to have me completely build out a custom and unique site? Learn how I work with all of my clients to make this a reality.",
-      link: "SEND INQUIRY",
+        "Need someone to handle planning, timelines, and coordination from start to finish? Let’s create a tailored project plan together.",
+      link: "START A PROJECT",
       delay: 0.2,
     },
     {
-      title: "General Questions",
+      title: "General Inquiries",
       description:
-        "Built your own site and need some help? Hiring me in for one-on-one training, lecture requests, or just to answer your questions.",
-      link: "SAY HELLO",
+        "Have a quick question or need advice on workflow, tools, or team collaboration? I’m happy to help.",
+      link: "SEND MESSAGE",
       delay: 0.3,
     },
   ];
@@ -60,7 +60,8 @@ const ContactOptions = () => {
             </motion.div>
           ))}
         </div>
-        {/* Direct Contact Section below the grid */}
+
+        {/* Direct Contact Section */}
         <motion.section
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -73,10 +74,10 @@ const ContactOptions = () => {
               Or contact me directly
             </h2>
             <a
-              href="mailto:hello@abdihakimothman.com"
+              href="mailto:hello@projectmanager.com"
               className="uppercase text-[#e1a87a] underline text-base md:text-lg mb-2 hover:text-[#f5d6b3] transition-colors"
             >
-              HELLO@Abdihakim Othman .COM
+              HELLO@PROJECTMANAGER.COM
             </a>
             <a
               href="tel:7175251031"

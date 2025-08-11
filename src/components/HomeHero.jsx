@@ -11,6 +11,7 @@ import {
 } from "lucide-react";
 import { NavLink, useLocation } from "react-router-dom";
 import Navbar from "./Header";
+import HeroBg from "../assets/hero-bg.jpg";
 
 const NAV_LINKS = [
   { name: "HOME", to: "/" },
@@ -44,25 +45,13 @@ const SquarespaceHero = () => {
   };
 
   return (
-    <div className="relative min-h-screen bg-black overflow-hidden">
+    <div
+      className="relative min-h-screen bg-black overflow-hidden bg-cover bg-center bg-fixed"
+      style={{
+        backgroundImage: `url(${HeroBg})`,
+      }}
+    >
       {/* Video Background - Enhanced for mobile */}
-      <div className="absolute inset-0 w-full h-full overflow-hidden">
-        <iframe
-          src="https://player.vimeo.com/video/357581440?h=fb2ef2ca32&autoplay=1&loop=1&muted=1&background=1&controls=0"
-          className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 mobile-video-bg"
-          style={{
-            width: "100vw",
-            height: "100vh",
-            minWidth: "100vw",
-            minHeight: "200vh", // Much more extended height for mobile
-            objectFit: "cover",
-          }}
-          frameBorder="0"
-          allow="autoplay; fullscreen; picture-in-picture"
-          allowFullScreen
-          title="Background Video"
-        ></iframe>
-      </div>
 
       {/* Dark Overlay */}
       <div className="absolute inset-0 bg-black bg-opacity-40 z-10"></div>
@@ -75,18 +64,18 @@ const SquarespaceHero = () => {
       {/* Hero Content - Enhanced z-index */}
       <div className="relative z-30 flex flex-col items-center justify-center min-h-screen px-6 text-center">
         <div className="max-w-6xl mx-auto">
-          <h1 className="text-white text-4xl md:text-6xl lg:text-7xl xl:text-8xl font-light leading-tight mb-12">
+          <h1 className="text-white text-2xl md:text-4xl lg:text-5xl xl:text-6xl font-light leading-tight mb-12">
             <span
               className="block mb-4"
-              style={{ fontFamily: "Playfair Display, serif" }}
+              // style={{ fontFamily: "Playfair Display, serif" }}
             >
-              Squarespace Developer
+              Project Manager
             </span>
             <span
               className="block"
-              style={{ fontFamily: "Playfair Display, serif" }}
+              // style={{ fontFamily: "Playfair Display, serif" }}
             >
-              & Coffee Enthusiast.
+              & Strategy Enthusiast
             </span>
           </h1>
 
@@ -95,19 +84,6 @@ const SquarespaceHero = () => {
             {/* Hire an Expert Button */}
             <button className="border-2 border-[#e1a87a] px-10 py-5 font-semibold text-sm tracking-widest hover:bg-[#e1a87a] text-white transition-all duration-300 transform hover:scale-105 z-40 relative">
               HIRE AN EXPERT
-            </button>
-
-            {/* Watch Video Button */}
-            <button
-              onClick={openVideoPlayer}
-              className="flex items-center space-x-3 text-white hover:text-gray-300 transition-colors group z-40 relative"
-            >
-              <div className="w-12 h-12 rounded-full bg-white bg-opacity-20 flex items-center justify-center group-hover:bg-opacity-30 transition-all">
-                <Play className="w-5 h-5 text-white ml-1" fill="currentColor" />
-              </div>
-              <span className="text-sm font-medium tracking-widest">
-                WATCH VIDEO
-              </span>
             </button>
           </div>
         </div>

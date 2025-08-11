@@ -8,24 +8,21 @@ const ServicesHire = () => {
 
   const services = [
     {
-      title: "Step 1. Interview",
+      title: "Step 1. Discovery & Alignment",
       description:
-        "Grab a coffee, tea, or beer, and let’s chat. I want to know how you got started, what you’re currently doing, and where you’re heading. This is time for you to share your vision. I come in with a lot of questions, but the questions are just there to help guide the conversation along.",
-
+        "We begin with a focused conversation to understand your goals, challenges, and success criteria. This is where we define project scope, key milestones, and stakeholder expectations, ensuring everyone is on the same page before moving forward.",
       delay: 0.1,
     },
     {
-      title: "Step 2. Build",
+      title: "Step 2. Planning & Execution",
       description:
-        "After the interview, I’ll have what I need to start on the design side of things. And we’ll make our way through two major rounds of revision that will put us in place for a successful site build. A bunch of communication, design, and development work will happen through this stage.",
-
+        "Using the insights from our discovery session, I create a structured project plan with timelines, deliverables, and clear responsibilities. During execution, I manage resources, track progress, and ensure communication flows smoothly between all parties.",
       delay: 0.2,
     },
     {
-      title: "Step 3. Polish",
+      title: "Step 3. Review & Delivery",
       description:
-        "As the project is coming to an end I'm typically waiting on any remaining content needed to complete the site. Once all of the pages have been populated, I go through some final cleanup and polish. I also provide detailed training so nobody is left in the dark before the site has been successfully launched.",
-
+        "Before final delivery, we review outcomes against the agreed objectives, making any necessary refinements. I also provide documentation, handover details, and actionable recommendations to ensure a smooth transition post-project.",
       delay: 0.3,
     },
   ];
@@ -49,20 +46,12 @@ const ServicesHire = () => {
               <p className="text-white mb-6 leading-relaxed">
                 {service.description}
               </p>
-              <motion.a
-                href="#"
-                style={{ color: "#e1a87a" }}
-                className="inline-block text-white pb-1 text-xs hover:text-gray-300 hover:border-gray-300 transition-all duration-300 font-medium"
-                whileHover={{ x: 5 }}
-              >
-                {service.link}
-              </motion.a>
             </motion.div>
           ))}
         </div>
-        {/* Direct Contact Section below the grid */}
       </div>
     </section>
   );
 };
+
 export default ServicesHire;

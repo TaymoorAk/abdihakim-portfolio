@@ -8,46 +8,25 @@ const ServicesSection = () => {
 
   const services = [
     {
-      title: "Code Shop",
+      title: "Project Planning",
       description:
-        "Built by an expert, I provide high-quality plugins, snippets, and support that will help take your site further.",
-      link: "VIEW ALL PLUGINS",
+        "From defining objectives to creating detailed timelines, I help teams start projects with clarity and confidence.",
+      link: "LEARN MORE",
       delay: 0.1,
     },
     {
-      title: "Site Builds",
+      title: "Team Coordination",
       description:
-        "Looking to have me completely build out a custom and unique site? Learn how I work with all of my clients to make this a reality.",
-      link: "VIEW A PROJECT",
+        "I bridge communication gaps between stakeholders, ensuring everyone is aligned and working toward the same goals.",
+      link: "VIEW PROCESS",
       delay: 0.2,
     },
     {
-      title: "Consulting",
+      title: "Risk & Timeline Management",
       description:
-        "Built your own site and need some help? Hiring me in for one-on-one training, lecture requests, or just to answer your questions.",
-      link: "LEARN MORE",
+        "Proactively identifying risks and keeping projects on track so deadlines are met without compromising quality.",
+      link: "SEE HOW",
       delay: 0.3,
-    },
-    {
-      title: "My Work",
-      description:
-        "Feel free to take a look at some of the latest projects I've been working on and the type of clients I typically work with.",
-      link: "VIEW PROJECTS",
-      delay: 0.4,
-    },
-    {
-      title: "Online Courses",
-      description:
-        "Take a look at my upcoming self-paced online courses. Developed to get you up and running with the latest technologies.",
-      link: "VIEW COURSES",
-      delay: 0.5,
-    },
-    {
-      title: "Reach Out",
-      description:
-        "Looking to hire a developer, consultant, or you just have a general question that needs to be answered? Reach out!",
-      link: "CONTACT ME",
-      delay: 0.6,
     },
   ];
 
@@ -62,11 +41,12 @@ const ServicesSection = () => {
           className="text-center mb-16"
         >
           <h2 className="text-5xl md:text-6xl font-bold text-white mb-6">
-            Everything I Offer
+            Project Management Expertise
           </h2>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-            From custom development to consulting and courses, I provide
-            comprehensive solutions to help you succeed in the digital world.
+            I help teams and organizations bring ideas to life — managing
+            timelines, resources, and communication to deliver projects on time
+            and with impact.
           </p>
         </motion.div>
 
@@ -88,7 +68,7 @@ const ServicesSection = () => {
               <motion.a
                 href="#"
                 style={{ color: "#e1a87a" }}
-                className=" inline-block text-white pb-1 text-xs hover:text-gray-300 hover:border-gray-300 transition-all duration-300 font-medium"
+                className="inline-block text-white pb-1 text-xs hover:text-gray-300 hover:border-gray-300 transition-all duration-300 font-medium"
                 whileHover={{ x: 5 }}
               >
                 {service.link}

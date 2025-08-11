@@ -43,20 +43,6 @@ const PersonalIntroPage = () => {
     <>
       <div className="min-h-screen bg-black text-white flex flex-col lg:flex-row mx-10 mt-24 mb-8">
         {/* Left side - Image with parallax */}
-        <motion.div
-          className="lg:w-1/2 w-full h-screen lg:h-auto relative overflow-hidden"
-          variants={imageVariants}
-          initial="hidden"
-          animate="visible"
-        >
-          <motion.img
-            src={AboutImg}
-            alt="Modern cityscape with architecture"
-            className="w-full h-full object-cover"
-            style={{ y }}
-          />
-          <div className="absolute inset-0 bg-gradient-to-r from-black/20 to-transparent"></div>
-        </motion.div>
 
         {/* Right side - Content */}
         <motion.div
@@ -86,24 +72,19 @@ const PersonalIntroPage = () => {
             transition={{ duration: 1, delay: 1.5, ease: "easeOut" }}
           /> */}
         </motion.div>
-      </div>
-
-      {/* Me in a Nutshell Section at the end */}
-      <div className="bg-black text-white flex flex-col items-start mx-10 lg:mx-60 mt-0 mb-8">
-        <motion.div variants={itemVariants} initial="hidden" animate="visible">
-          <motion.p
-            className="text-xs lg:text-sm uppercase tracking-[0.2em] text-[#e1a87a] mb-6"
-            variants={itemVariants}
-          >
-            ME IN A NUT-SHELL
-          </motion.p>
-          <motion.h2
-            className="text-3xl lg:text-4xl font-light leading-tight"
-            variants={itemVariants}
-          >
-            I'm a husband, father, cat person, coffee enthusiast, gamer, whiskey
-            drinker, and Squarespace developer.
-          </motion.h2>
+        <motion.div
+          className="lg:w-1/2 w-full h-screen lg:h-auto relative overflow-hidden"
+          variants={imageVariants}
+          initial="hidden"
+          animate="visible"
+        >
+          <motion.img
+            src={AboutImg}
+            alt="Modern cityscape with architecture"
+            className="w-full h-full object-cover"
+            style={{ y }}
+          />
+          <div className="absolute inset-0 bg-gradient-to-r from-black/20 to-transparent"></div>
         </motion.div>
       </div>
     </>

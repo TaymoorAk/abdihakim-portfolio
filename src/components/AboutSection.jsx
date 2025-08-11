@@ -69,6 +69,22 @@ const AboutSection = () => {
         {/* Second Row - Personal Brand */}
         <div ref={ref2} className="grid lg:grid-cols-2 gap-16 items-center">
           {/* Content */}
+
+          {/* Image */}
+          <motion.div
+            initial={{ opacity: 0, x: 50 }}
+            animate={isInView2 ? { opacity: 1, x: 0 } : { opacity: 0, x: 50 }}
+            transition={{ duration: 0.8, delay: 0.2 }}
+            className="relative"
+          >
+            <div className="aspect-[4/5] bg-gradient-to-br from-gray-800 to-gray-900 rounded-lg overflow-hidden">
+              <img
+                src={AboutImg2}
+                alt="Working on laptop"
+                className="w-full h-full object-cover"
+              />
+            </div>
+          </motion.div>
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             animate={isInView2 ? { opacity: 1, x: 0 } : { opacity: 0, x: -50 }}
@@ -97,22 +113,6 @@ const AboutSection = () => {
                 style={{ backgroundColor: "#e1a87a" }}
               ></div>
             </motion.button>
-          </motion.div>
-
-          {/* Image */}
-          <motion.div
-            initial={{ opacity: 0, x: 50 }}
-            animate={isInView2 ? { opacity: 1, x: 0 } : { opacity: 0, x: 50 }}
-            transition={{ duration: 0.8, delay: 0.2 }}
-            className="relative"
-          >
-            <div className="aspect-[4/5] bg-gradient-to-br from-gray-800 to-gray-900 rounded-lg overflow-hidden">
-              <img
-                src={AboutImg2}
-                alt="Working on laptop"
-                className="w-full h-full object-cover"
-              />
-            </div>
           </motion.div>
         </div>
       </div>

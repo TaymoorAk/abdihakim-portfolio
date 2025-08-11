@@ -46,14 +46,14 @@ const ServicesText1 = () => {
 
   return (
     <motion.div
-      className="min-h-screen bg-black flex items-center justify-center px-4 lg:px-48 py-10 md:py-20"
+      className="min-h-screen bg-black flex items-center justify-center px-4 lg:px-48 py-10 md:py-20 relative"
       variants={containerVariants}
       initial="hidden"
       animate="visible"
     >
       <div className="max-w-6xl mx-auto">
         <motion.div
-          className="text-left  space-y-8 md:space-y-12"
+          className="text-left space-y-8 md:space-y-12"
           variants={containerVariants}
         >
           {/* Subtitle */}
@@ -61,23 +61,24 @@ const ServicesText1 = () => {
             className="text-amber-400 uppercase tracking-[0.2em] text-xs md:text-sm font-medium"
             variants={subtitleVariants}
           >
-            Working with Squarespace
+            Leading Projects to Success
           </motion.p>
 
           {/* Main heading */}
           <motion.h1
-            className="text-white leading-tight text-xl sm:text-5xl md:text-4xl lg:text-4xlfont-light"
+            className="text-white leading-tight text-xl sm:text-5xl md:text-4xl lg:text-4xl font-light"
             variants={textVariants}
           >
-            Working exclusively as a Squarespace developer & designer since
-            early 2016, and my knowledge as a front-end developer allows me to
-            push this platform further.
+            With years of experience in project management, I specialize in
+            planning, coordinating, and delivering projects on time and within
+            scope — while fostering collaboration and driving measurable
+            results.
           </motion.h1>
         </motion.div>
       </div>
 
       {/* Subtle background pattern */}
-      <div className="absolute inset-0 opacity-5">
+      <div className="absolute inset-0 opacity-5 pointer-events-none">
         <div className="absolute top-1/4 left-1/4 w-1 h-1 bg-white rounded-full"></div>
         <div className="absolute top-1/3 right-1/3 w-1 h-1 bg-white rounded-full"></div>
         <div className="absolute bottom-1/4 left-1/3 w-1 h-1 bg-white rounded-full"></div>
