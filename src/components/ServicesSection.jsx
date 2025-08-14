@@ -8,23 +8,23 @@ const ServicesSection = () => {
 
   const services = [
     {
-      title: "Project Planning",
+      title: "🌍 International Expertise",
       description:
-        "From defining objectives to creating detailed timelines, I help teams start projects with clarity and confidence.",
+        "Experience across the UK, UAE and East Africa, partnering with organisations such as World Vision, IOM, Oxfam and CARE.",
       link: "LEARN MORE",
       delay: 0.1,
     },
     {
-      title: "Team Coordination",
+      title: "💡Innovation for Impact",
       description:
-        "I bridge communication gaps between stakeholders, ensuring everyone is aligned and working toward the same goals.",
+        "Creator of Sokaab, the first mobile enabled crowdfunding platform in Somalia and Somaliland, mobilising over 2 million dollars for community projects.",
       link: "VIEW PROCESS",
       delay: 0.2,
     },
     {
-      title: "Risk & Timeline Management",
+      title: "👥 Youth Empowerment",
       description:
-        "Proactively identifying risks and keeping projects on track so deadlines are met without compromising quality.",
+        "Led nationwide programmes training hundreds of young people in coding, design and digital marketing.",
       link: "SEE HOW",
       delay: 0.3,
     },
@@ -40,14 +40,14 @@ const ServicesSection = () => {
           transition={{ duration: 0.8 }}
           className="text-center mb-16"
         >
-          <h2 className="text-5xl md:text-6xl font-bold text-white mb-6">
-            Project Management Expertise
+          <h2 className="text-5xl md:text-6xl  text-white mb-6">
+            Key Highlights
           </h2>
-          <p className="text-xl text-gray-300 max-w-3xl mx-auto">
+          {/* <p className="text-xl text-gray-300 max-w-3xl mx-auto">
             I help teams and organizations bring ideas to life — managing
             timelines, resources, and communication to deliver projects on time
             and with impact.
-          </p>
+          </p> */}
         </motion.div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">

@@ -1,64 +1,55 @@
 import React from "react";
 import { motion } from "framer-motion";
+import serviceBg from "../assets/success-bg.jpg";
 
 const ServicesText1 = () => {
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
       opacity: 1,
-      transition: {
-        duration: 0.6,
-        staggerChildren: 0.3,
-      },
+      transition: { duration: 0.6, staggerChildren: 0.3 },
     },
   };
 
   const textVariants = {
-    hidden: {
-      opacity: 0,
-      y: 30,
-    },
+    hidden: { opacity: 0, y: 30 },
     visible: {
       opacity: 1,
       y: 0,
-      transition: {
-        duration: 0.8,
-        ease: "easeOut",
-      },
+      transition: { duration: 0.8, ease: "easeOut" },
     },
   };
 
   const subtitleVariants = {
-    hidden: {
-      opacity: 0,
-      y: 20,
-    },
+    hidden: { opacity: 0, y: 20 },
     visible: {
       opacity: 1,
       y: 0,
-      transition: {
-        duration: 0.6,
-        ease: "easeOut",
-        delay: 0.2,
-      },
+      transition: { duration: 0.6, ease: "easeOut", delay: 0.2 },
     },
   };
 
   return (
     <motion.div
-      className="min-h-screen bg-black flex items-center justify-center px-4 lg:px-48 py-10 md:py-20 relative"
+      className="relative min-h-screen flex items-center justify-center px-4 lg:px-48 py-10 md:py-20 bg-cover bg-fixed"
       variants={containerVariants}
       initial="hidden"
       animate="visible"
+      style={{
+        backgroundImage: `url(${serviceBg})`,
+      }}
     >
-      <div className="max-w-6xl mx-auto">
+      {/* Darker overlay for better readability */}
+      <div className="absolute inset-0 bg-black/60"></div>
+
+      <div className="max-w-6xl mx-auto relative z-10">
         <motion.div
           className="text-left space-y-8 md:space-y-12"
           variants={containerVariants}
         >
           {/* Subtitle */}
           <motion.p
-            className="text-amber-400 uppercase tracking-[0.2em] text-xs md:text-sm font-medium"
+            className="text-orange-200 uppercase tracking-[0.2em] text-xs md:text-sm font-medium drop-shadow-md"
             variants={subtitleVariants}
           >
             Leading Projects to Success
@@ -66,13 +57,12 @@ const ServicesText1 = () => {
 
           {/* Main heading */}
           <motion.h1
-            className="text-white leading-tight text-xl sm:text-5xl md:text-4xl lg:text-4xl font-light"
+            className="text-white leading-tight text-xl sm:text-5xl md:text-4xl lg:text-4xl font-light drop-shadow-lg"
             variants={textVariants}
           >
-            With years of experience in project management, I specialize in
-            planning, coordinating, and delivering projects on time and within
-            scope — while fostering collaboration and driving measurable
-            results.
+            With a proven track record in business growth, community development
+            and digital innovation, Abdihakim offers tailored consultancy and
+            strategy services for organisations, NGOs and entrepreneurs.
           </motion.h1>
         </motion.div>
       </div>

@@ -10,7 +10,6 @@ import ServicesText2 from "../components/ServicesText2";
 const Services = () => {
   return (
     <>
-      <Header />
       <ServicesHero />
       <ServicesText1 />
       {/* <VideoComponet /> */}

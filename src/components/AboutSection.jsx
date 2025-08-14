@@ -40,7 +40,7 @@ const AboutSection = () => {
             animate={isInView1 ? { opacity: 1, x: 0 } : { opacity: 0, x: 50 }}
             transition={{ duration: 0.8, delay: 0.2 }}
           >
-            <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
+            <h2 className="text-4xl md:text-5xl  text-white mb-6">
               Being a Developer & Designer is my primary focus.
             </h2>
             <p className="text-xl text-gray-300 mb-8 leading-relaxed">
@@ -90,7 +90,7 @@ const AboutSection = () => {
             animate={isInView2 ? { opacity: 1, x: 0 } : { opacity: 0, x: -50 }}
             transition={{ duration: 0.8 }}
           >
-            <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
+            <h2 className="text-4xl md:text-5xl  text-white mb-6">
               My other passion is building powerful personal brands.
             </h2>
             <p className="text-xl text-gray-300 mb-8 leading-relaxed">

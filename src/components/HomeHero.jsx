@@ -69,13 +69,7 @@ const SquarespaceHero = () => {
               className="block mb-4"
               // style={{ fontFamily: "Playfair Display, serif" }}
             >
-              Project Manager
-            </span>
-            <span
-              className="block"
-              // style={{ fontFamily: "Playfair Display, serif" }}
-            >
-              & Strategy Enthusiast
+              Global Development Strategist
             </span>
           </h1>
 

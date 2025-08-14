@@ -114,7 +114,7 @@
 import React, { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
-import { NavLink, useLocation } from "react-router-dom";
+import { Link, NavLink, useLocation } from "react-router-dom";
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const location = useLocation();
@@ -137,12 +137,12 @@ const Navbar = () => {
     <nav className="relative z-20 flex items-center justify-between px-6 py-6 lg:px-12 border-b border-white/20">
       {/* AO Logo Animation */}
       <motion.div
-        className="text-white text-2xl font-bold tracking-wider"
+        className="text-white text-2xl  tracking-wider"
         initial={{ opacity: 0, scale: 0.5 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.6, ease: "easeOut" }}
       >
-        Abdihakim Othman
+        <Link to={"/"}>Abdihakim Othman</Link>
       </motion.div>
 
       {/* Centered Nav Links */}
